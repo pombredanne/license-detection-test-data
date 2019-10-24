@@ -1,5 +1,5 @@
 # license-detection-test-data
-A set of license-related files to use as a test suite for license scanners.
+A set of about 73,000 license-related files to use as a test suite for license scanners.
 See /licenses directory
 
 This is based on pickled data found in these downloads provided by Github as part of https://github.com/github/CodeSearchNet :
