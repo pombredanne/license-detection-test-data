@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://github.com/schul-cloud/resources-api-v1/raw/master/schemas/license/license.json",
+  "title": "Resource",
+  "description": "Please view the description of the schema here: https://github.com/schul-cloud/resources-api-v1/tree/master/schemas/resource",
+  "type":"object",
+  "required": [
+    "value",
+    "copyrighted"
+  ],
+  "properties" : {
+    "value": {
+      "type": "string",
+      "title": "license name",
+      "description": "This is the name of the license, please see this page https://commons.wikimedia.org/wiki/Commons:Lizenzvorlagen#Freie_.E2.80.9ECreative-Commons-Lizenzen.E2.80.9C for examples like \"cc-zero\"",
+      "example": "cc-by-sa-3.0"
+    },
+    "copyrighted" : {
+      "type": "boolean",
+      "title": "Are there conditions for copying? This is implied by value.",
+      "example": true
+    }
+  }
+}

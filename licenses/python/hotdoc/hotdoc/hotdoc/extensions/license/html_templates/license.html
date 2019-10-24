@@ -1,0 +1,21 @@
+@require(license, logo_path, content_designation)
+
+<div class="license-description">
+	<table>
+		<tbody>
+			<tr>
+			<td>
+				<em>@content_designation licensed under a <a rel="license" href="@license.url">@license.full_name</a>
+				license, unless otherwise noted.</em>
+			</td>
+			<td>
+			@if logo_path:
+			<a rel="license" href="@license.url">
+				<img src="@logo_path" class="license-logo" alt="@license.full_name"></img>
+			</a>
+			@end
+			</td>	
+			</tr>
+		</tbody>
+	</table>
+</div>

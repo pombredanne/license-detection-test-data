@@ -1,0 +1,7 @@
+date: 2019-10-05
+download_urls:
+ - https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip
+ - https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/javascript.zip
+ - https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/java.zip
+ - https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/ruby.zip
+ - https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/go.zip

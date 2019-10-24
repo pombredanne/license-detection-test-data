@@ -1,0 +1,13 @@
+---
+whitelist:
+- MIT
+- Apache 2.0
+- BSD
+- ruby
+ignore_groups:
+- test
+- development
+ignore_dependencies:
+#- bundler
+dependencies_file_dir: './doc/licenses'
+project_name: middleman-presentation

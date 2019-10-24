@@ -1,0 +1,6 @@
+{
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/<%= author.name %>/<%= project.name %>/blob/master/<%= license.filename %>"
+  }
+}

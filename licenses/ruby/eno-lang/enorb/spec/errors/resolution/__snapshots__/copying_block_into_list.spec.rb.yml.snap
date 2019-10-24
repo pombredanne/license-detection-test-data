@@ -1,0 +1,9 @@
+---
+"./spec/errors/resolution/copying_block_into_list.spec.rb[1:1:1]": "In line 5 a block
+  is copied into a list.\n\n   Line | Content\n   ...\n      3 | -- original\n      4
+  | \n >    5 | copy < original\n      6 | - item\n"
+"./spec/errors/resolution/copying_block_into_list.spec.rb[1:1:2]":
+- - 4
+  - 0
+- - 4
+  - 15

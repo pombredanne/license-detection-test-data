@@ -1,0 +1,9 @@
+---
+"./spec/errors/resolution/copying_field_into_fieldset.spec.rb[1:1:1]": "In line 3
+  a field is copied into a fieldset.\n\n   Line | Content\n      1 | original: value\n
+  \     2 | \n >    3 | copy < original\n      4 | entry = value\n"
+"./spec/errors/resolution/copying_field_into_fieldset.spec.rb[1:1:2]":
+- - 2
+  - 0
+- - 2
+  - 15

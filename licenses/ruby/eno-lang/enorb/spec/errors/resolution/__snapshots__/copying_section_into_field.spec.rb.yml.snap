@@ -1,0 +1,9 @@
+---
+"./spec/errors/resolution/copying_section_into_field.spec.rb[1:1:1]": "In line 5 a
+  section is copied into a field.\n\n   Line | Content\n   ...\n      3 | # other\n
+  \     4 | \n >    5 | copy < original\n      6 | | appendix\n"
+"./spec/errors/resolution/copying_section_into_field.spec.rb[1:1:2]":
+- - 4
+  - 0
+- - 4
+  - 15

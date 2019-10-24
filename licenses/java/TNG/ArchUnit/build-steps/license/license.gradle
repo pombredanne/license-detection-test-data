@@ -1,0 +1,141 @@
+String guavaLicenseFile = 'licenses/guava.license'
+String asmLicenseFile = 'licenses/asm.license'
+
+def scriptRoot = currentScriptRootOf this
+def fillTemplateFile = {
+    new File(scriptRoot, it).text.
+            replace('${year}', year).
+            replace('${owner}', "${company.name}")
+}
+
+def pomOf = { String dep ->
+    "${dep}@pom"
+}
+
+def parentPomOf = { String dep ->
+    pomOf(dep.replaceAll(/(.*:)(.*)(:.*)/, /$1$2-parent$3/))
+}
+
+configurations {
+    thirdpartyAsm
+    thirdpartyGuava
+}
+
+dependencies {
+    thirdpartyAsm pomOf(dependency.asm)
+    thirdpartyGuava parentPomOf(dependency.guava)
+}
+
+def parseLicenseInfoFrom = { config ->
+    def pom = config.resolve().find { it.name.endsWith('.pom') }
+
+    def projectNode = new XmlParser().parse(pom)
+    def licenses = projectNode.licenses.license
+    assert licenses.size() == 1: 'Can only handle one declared license at the moment'
+
+    def name = licenses.name*.text().find()
+    def address = licenses.url*.text().find()
+
+    assert name: "Couldn't retrieve name of license from ${pom} (checked project>licenses>license>name)"
+    assert address: "Couldn't retrieve URl of license from ${pom} (checked project>licenses>license>url)"
+
+    [
+            name: name,
+            url : new URL(address)
+    ]
+}
+
+def createLicense = { licenseInfo, preProcessLicenseText = null ->
+    def text = licenseInfo.url.text
+    if (preProcessLicenseText) {
+        text = preProcessLicenseText(text)
+    }
+
+    def sourceName = "Name: ${licenseInfo.name}"
+    def sourceUrl = "Url : ${licenseInfo.url}"
+
+    """${sourceName}
+${sourceUrl}
+
+${('-' * Math.max(sourceName.length(), sourceUrl.length()))}
+
+${text}
+"""
+}
+
+// Pretty dirty, but I couldn't find an official plain text version online
+def unwrapHtml = { htmlInput ->
+    def html = htmlInput
+    while (!html.matches(/(?s)[^<]*Copyright.*/) && html.contains('<pre>')) {
+        html = html.substring(html.indexOf('<pre>') + 5, html.length()).trim()
+    }
+
+    assert html.contains('Copyright'):
+            "Couldn't find license tag (looked for <pre>...Copyright...</pre> within ${html})"
+
+    html.substring(0, html.indexOf('</pre>'))
+}
+
+task updateLicenses {
+    doLast {
+        def asmLicenseWorkaround = parseLicenseInfoFrom(configurations.thirdpartyAsm)
+        // No, they can never adhere to conventions :-( The URL from the POM at the moment forwards to the root page
+        asmLicenseWorkaround = [name: asmLicenseWorkaround.name, url: new URL(asmLicenseWorkaround.url.toString().replace('.org', '.io'))]
+        rootProject.file(asmLicenseFile).text = createLicense(asmLicenseWorkaround, unwrapHtml)
+        rootProject.file(guavaLicenseFile).text = createLicense(parseLicenseInfoFrom(configurations.thirdpartyGuava))
+    }
+}
+
+releaseProjects*.with {
+    def installer = install.repositories.mavenInstaller
+    def deployer = uploadArchives.repositories.mavenDeployer
+
+    [installer, deployer]*.pom*.whenConfigured {
+        project {
+            licenses {
+                license {
+                    name app.license.name
+                    url app.license.url
+                    distribution 'repo'
+                }
+                if (repackagesAsm) {
+                    def asmLicense = rootProject.file(asmLicenseFile).readLines() as Queue
+                    license {
+                        name asmLicense.poll().replaceAll(/^.*?: /, '')
+                        url asmLicense.poll().replaceAll(/^.*?: /, '')
+                        distribution 'repo'
+                    }
+                }
+            }
+        }
+    }
+
+    task addLicenseHeader {
+        doLast {
+            def javaFiles = ['main', 'jdk9main', 'api', 'engineApi']
+                    .findAll(sourceSets.asMap.&containsKey)
+                    .collect { sourceSets[it].allJava.asList() }
+                    .flatten()
+
+            def headerText = fillTemplateFile('archunit.header.template')
+
+            javaFiles.each { sourceFile ->
+                if (!sourceFile.text.startsWith(headerText)) {
+                    sourceFile.text = headerText + sourceFile.text.substring(sourceFile.text.indexOf('package '))
+                }
+            }
+        }
+    }
+    compileJava.dependsOn addLicenseHeader
+
+    afterEvaluate {
+        if (repackagesAsm) {
+            shadowJar {
+                from(rootProject.file(asmLicenseFile)) {
+                    into "/${asmRelocationPackage.replace('.', '/')}"
+                }
+            }
+            shadowJar.mustRunAfter updateLicenses
+        }
+    }
+}

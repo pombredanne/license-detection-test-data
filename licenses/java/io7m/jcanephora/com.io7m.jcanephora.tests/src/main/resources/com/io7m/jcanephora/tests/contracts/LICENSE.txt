@@ -1,0 +1,29 @@
+The following files are taken from PngSuite (http://www.schaik.com/pngsuite/):
+
+basn0g01.png
+basn0g02.png
+basn0g04.png
+basn0g08.png
+basn0g16.png
+basn2c08.png
+basn2c16.png
+basn3p01.png
+basn3p02.png
+basn3p04.png
+basn3p08.png
+basn4a08.png
+basn4a16.png
+basn6a08.png
+basn6a16.png
+
+They are distributed under the following license:
+
+==
+PngSuite
+--------
+
+Permission to use, copy, modify and distribute these images for any
+purpose and without fee is hereby granted.
+
+(c) Willem van Schaik, 1996, 2011
+==

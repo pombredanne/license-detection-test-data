@@ -1,0 +1,205 @@
+                          Aeon Digital Public License
+                                 Version 1.0
+                                2019, July 21
+
+Copyright © 2019, Rianna Cantarelli
+            http://aeondigital.com.br
+            rianna.aeon@gmail.com
+
+
+         TERMS AND CONDITIONS FOR USE, REPRODUCTION AND DISTRIBUTION
+
+
+1. Definitions
+--------------
+
+
+    "License" or "ADPL-v1.0"
+    Refers to the Terms and Conditions for Use, Reproduction and Distribution
+    as defined by the Sections of this document.
+
+    "Licensor"
+    Refers to the copyright owner or entity authorized by the copyright owner 
+    that is granting the License.
+
+    "Software" or "Program"
+    Refers to algorithms, functions, classes, interfaces, traits, and other 
+    associated source code, configuration, testing, and documentation files.
+
+    "Contribution"
+    Refers to any changes made to or explicitly proposed in the Software that 
+    have been published or obtained by any means of communication or platform.
+
+    "Version"
+    Refers to the result obtained by making or adding any Contribution to the 
+    Software and ultimately obtaining a modified version thereof.
+
+    "Contributor"
+    Refers to the individual or Legal Entity on behalf of whom a Contribution 
+    has been made and incorporated in the Software or who has incorporated 
+    such change on their own and thereby generated its own Version.
+
+    "Maintainer"
+    Refers to any individual who performs or has performed the work of 
+    incorporating Contributions into the Software thereby generating a new 
+    Version.
+
+    "Object"
+    Refers to any form resulting from the transformation, compilation or 
+    translation of the Software into any other medium or format.
+
+    "Derivative Work"
+    Refers to the use of the Software or any of its Versions for the creation 
+    of other works, softwares or objects.
+
+
+2. User Rights
+--------------
+
+It is granted free of charge to any person obtaining a public copy of this 
+Software the permissions to use, copy, modify, merge, publish, distribute 
+and/or sell copies of the Software alone or in Derivative Works within its 
+Terms and Conditions for Use, Reproduction and Distribution defined by this 
+License.
+
+The Licensor reserves the exclusive right to use the Software, or any Version 
+made by any Maintainer, for:
+    a) the creation of Proprietary Derivative Works.
+    b) offer, sell or trade it with another license.
+    c) offer, sell or trade it with a use authorization that modifies any of 
+       the provisions of this License.
+
+
+3. Conditions
+-------------
+
+Contributors grant Licensor and each other a non-exclusive, perpetual, 
+irrevocable, worldwide royalty-free license to the public Contributions made 
+to the Software.
+
+
+4. Limitations
+--------------
+
+Derivative Works of the Software can be licensed by other licenses as long as, 
+in the use of these Derivative Works, the criteria specified for Derivative 
+Works in this License are met.
+
+It is not allowed to any person to use the trade names, trademarks, service 
+marks, or product names that belongs to the Licensor or any of the 
+Contributors, except as required for reasonable and customary use in 
+describing the origin of the work.
+
+
+5. Obligations
+--------------
+
+All distribution of the Software or Versions originating from the 
+Contributions, as well as Objects resulting therefrom, must be made under this 
+same License and maintaining the same copyright information originally 
+specified by the Licensor.
+
+Every Maintainer must add to the CONTRIBUTORS file the personal identification 
+provided by the Contributor responsible for any embedded Contribution and 
+maintain the identification of all Contributors who also contributed to that 
+Version.
+
+Under this License, any Derivative Work used by anyone except the Licensor, 
+even when such work is performed via the network or as a service, must provide 
+to its users an easy, free, explicit, clear and evident means of obtaining 
+their full source code.
+
+
+6. Disclaimer of Warranty
+-------------------------
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+
+7. Limitation of Liability
+--------------------------
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+
+8. Interpretation of Sections 6 and 7
+-------------------------------------
+
+If the disclaimer of warranty and limitation of liability provided above 
+cannot be given local legal effect according to their terms, reviewing courts 
+shall apply local law that most closely approximates an absolute waiver of all 
+civil liability in connection with the Program, unless a warranty or 
+assumption of liability accompanies a copy of the Program in return for a fee.
+
+
+      END OF TERMS AND CONDITIONS OF USE, REPRODUCTION AND DISTRIBUTION
+
+
+
+                                    APPENDIX
+
+
+How to apply this License to your work
+--------------------------------------
+
+1.  Save a copy of this file at the highest level of your project directory 
+    structure where the Software is located.
+2.  Fill in the copyright information in the License header as shown below, 
+    replacing the fields in brackets "[]" with your own identifying 
+    information (Do not include the brackets!).
+    Fields preceded by "?" are optional and if not filled in should be deleted 
+    completely.
+
+    Copyright © [year], [name of copyright holder]
+                ?[project or copyright holder website]
+                ?[<contact email>]
+
+3.  In each source code file, add the copyright information and specify the 
+    type of License used.
+    You can use the appropriate comment syntax for each language type.
+
+    Example 1:
+        Specifying license and copyright using standard PHP comments.
+
+        // Copyright © 2019, Rianna Cantarelli; Under the license ADPL-v1.0
+
+    Example 2:
+        Specifying license and copyright using PHPDocs.
+
+        /**
+         * @author Rianna Cantarelli <rianna@aeondigital.com.br>
+         * @copyright 2019, Rianna Cantarelli
+         * @licence ADPL-v1.0
+         */
+
+
+
+How to add the Contributtor's IDs in the CONTRIBUTORS file
+----------------------------------------------------------
+
+Whenever any Contribution is incorporated into the Software, the person 
+responsible for performing such task, called the Maintainer, shall include 
+the Contributtor's identification in the CONTRIBUTORS file as provided in 
+Section 5 of this License.
+
+Below is an example of how to add such information to the file:
+
+[contributtor's name], [year or years in which contributions were made]
+    ?[contributtor's website]
+    ?[<contributtor's email>]
+    ?[year/month] ?[information on each relevant contribution given]

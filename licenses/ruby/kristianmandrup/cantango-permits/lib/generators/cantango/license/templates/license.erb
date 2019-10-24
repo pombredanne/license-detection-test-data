@@ -1,0 +1,10 @@
+class <%= name.to_s.camelize %>License < CanTango::License
+  def initialize name
+    super
+  end
+
+  def permissions
+    <%= rules_logic.strip %>
+    <%= license_logic %>
+  end
+end

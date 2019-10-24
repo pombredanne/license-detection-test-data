@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: wasp-launcher
+Upstream-Contact: Ildar Gafurov <dev@binblob.com>
+Source: https://github.com/a1ezzz/wasp-launcher
+
+Files: *
+Copyright: 2016-2017, Ildar Gafurov, <dev@binblob.com>
+License: GPL-3

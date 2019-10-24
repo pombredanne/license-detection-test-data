@@ -1,0 +1,130 @@
+{
+  "predicate_name": "copyright",
+  "values": [
+    {
+      "term_label": "All rights reserved",
+      "term_uri": "All rights reserved",
+      "description": "  With this license you—as the copyright holder—reserve all rights held under copyright law, such as for distribution and creation of derivative works. This means that no one can use your content in a work—such as a presentation or article—or create derivatives from it without your permission.",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "CC0 1.0 Universal",
+      "term_uri": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "With this license you are waiving your rights as copyright owner to the content you upload. This means your content may be distributed and reused without attribution, without restriction. CC0 is a license that one applies to one's own work; rarely does one apply it to another's work, unless one has the appropriate rights to do so.",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Creative Commons 3.0 BY-NC",
+      "term_uri": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "description": "With this license you allow others to \"remix, tweak, and build\" on your content in non-commercial ways. While they must credit you as the original creator and while the remixed, tweaked, or expanded upon content must remain non-commercial, they do not have to apply identical license terms on the new content.",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons 3.0 BY-NC-ND",
+      "term_uri": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "description": "With this license you share your work with others and allow them to download your work, provided they attribute you as the creator and refrain from changing the content in any way and from using it for commercial means.",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons 3.0 BY-NC-SA",
+      "term_uri": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "description": "With this license you allow others to \"remix, tweak, and build\" on your content in non-commercial ways, provided they give you credit (as the original creator) and also apply the same license level to the newly resulting creations.",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons 3.0 BY-ND",
+      "term_uri": "https://creativecommons.org/licenses/by-nd/3.0/",
+      "description": "With this license you permit \"redistribution, commercial and non-commercial,\" provided the content remains unaltered and intact (i.e., whole) and provided you are attributed as the original creator.",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons 3.0 BY-SA",
+      "term_uri": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "With this license you allow others to \"remix, tweak, and build\" on your deposited content, including for commercial uses, provided they attribute you as the original creator AND incorporate the same level of licensing (i.e., CC BY-SA) for the newly resulting creation. \"All new works based on yours will carry the same license, so any derivatives will also allow commercial use.",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY 3.0 United States",
+      "term_uri": "http://creativecommons.org/licenses/by/3.0/us/",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY 3.0 Unported",
+      "term_uri": "https://creativecommons.org/licenses/by/3.0/",
+      "description": "With this license you allow others to \"distribute, remix, tweak, and build\" on your deposited content—including for commercial purposes—provided they attribute you as the original creator. CurateND supports both the United States and International (Unported) versions of this license.",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY 4.0",
+      "term_uri": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "With this license, you allow others to \"distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials.\"",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY-NC 3.0 United States",
+      "term_uri": "http://creativecommons.org/licenses/by-nc/3.0/us/",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2016-12-31"
+    },
+    {
+      "term_label": "Creative Commons BY-NC 4.0",
+      "term_uri": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "description": "With this license, you allow others to \"remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don't have to license their derivative works on the same terms.\"",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY-NC-ND 3.0 United States",
+      "term_uri": "http://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2016-12-31"
+    },
+    {
+      "term_label": "Creative Commons BY-NC-ND 4.0",
+      "term_uri": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "description": "With this license, you only allow others to \"download your works and share them with others as long as they credit you, but they can't change them in any way or use them commercially.\"",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY-NC-SA 3.0 United States",
+      "term_uri": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2016-12-31"
+    },
+    {
+      "term_label": "Creative Commons BY-NC-SA 4.0",
+      "term_uri": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "description": "With this license, you allow others to \"remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.\"",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY-ND 3.0 United States",
+      "term_uri": "http://creativecommons.org/licenses/by-nd/3.0/us/",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2016-12-31"
+    },
+    {
+      "term_label": "Creative Commons BY-ND 4.0",
+      "term_uri": "https://creativecommons.org/licenses/by-nd/4.0/",
+      "description": "With this license, you allow \"redistribution, commercial and non-commercial, as long as [the licensed object] is passed along unchanged and in whole, with credit to you.\"",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Creative Commons BY-SA 3.0 United States",
+      "term_uri": "http://creativecommons.org/licenses/by-sa/3.0/us/",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2016-12-31"
+    },
+    {
+      "term_label": "Creative Commons BY-SA 4.0",
+      "term_uri": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "With this license, you allow others to \"remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to 'copyleft' free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects.\"",
+      "activated_on": "2017-01-01"
+    },
+    {
+      "term_label": "Public Domain Mark 1.0",
+      "term_uri": "http://creativecommons.org/publicdomain/mark/1.0/",
+      "description": "When content is in the public domain, it has no known copyright owner.",
+      "activated_on": "2015-01-01"
+    }
+  ]
+}

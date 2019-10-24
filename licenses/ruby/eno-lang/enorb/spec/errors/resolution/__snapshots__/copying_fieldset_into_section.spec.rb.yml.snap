@@ -1,0 +1,9 @@
+---
+"./spec/errors/resolution/copying_fieldset_into_section.spec.rb[1:1:1]": "In line
+  4 a fieldset is copied into a section.\n\n   Line | Content\n   ...\n      2 | entry
+  = value\n      3 | \n >    4 | # copy < original\n"
+"./spec/errors/resolution/copying_fieldset_into_section.spec.rb[1:1:2]":
+- - 3
+  - 0
+- - 3
+  - 17

@@ -1,0 +1,11 @@
+{
+    "author": "Logicify",
+    "back": false,
+    "exclude": "",
+    "include": "*.py",
+    "license": "mit",
+    "program": "Django API Commons",
+    "short": "Boilerplate commons for django based web api application.",
+    "single": true,
+    "year": "2017"
+}
